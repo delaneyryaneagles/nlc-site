@@ -385,3 +385,11 @@ footer:not(.rv footer){background:#0E0F0D}
 .fgrid>div:first-child{max-width:340px}
 @media(max-width:1180px){.nav ul,.nav .phone{display:none}.burger{display:block}.nav ul a{color:#F4EFE4}.nav .cta{margin-left:auto;margin-right:12px}}
 .fco em{display:block;font-style:normal;font-size:12.5px;color:#D9D4C7;font-weight:600;margin:-4px 0 8px}
+
+/* lead services: windows & doors, decks */
+.svc article.feat{background:#FBF6E8;border-top:3px solid #C9A24A}
+.svc article.feat h3{font-size:24px}
+.svc h3 a{color:inherit}
+a.more{display:inline-block;margin-top:14px;color:#8A6A1F;font-weight:700;font-size:14px}
+a.more:hover{text-decoration:underline}
+@media(min-width:901px){.svc article.blackcell:last-child:nth-child(3n+1){grid-column:1/-1}}
