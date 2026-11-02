@@ -28,3 +28,17 @@ document.documentElement.classList.add('js');
   var st=document.createElement('style');st.textContent='.hero::before{transform:translateY(var(--py,0)) scale(1.06)}';document.head.appendChild(st);}
  if(window.Lenis)startLenis();else addEventListener('load',startLenis);
 })();
+
+/* Google Reviews buttons: open the reviews themselves on each device.
+   Google's reviews page returns an error on iPhone, and the Maps link can open the Maps app on its overview,
+   so iPhones go to our own page of every review; the Google link stays available there. */
+(function(){
+ var GOOGLE='https://search.google.com/local/reviews?placeid=ChIJFVW_zdYX7W4RlFPvew8Cwwo';
+ var ua=navigator.userAgent;
+ var ios=/iPhone|iPad|iPod/.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+ var onReviews=/reviews\.html/.test(location.pathname);
+ document.querySelectorAll('a[href*="!9m1!1b1"]').forEach(function(a){
+  if(!ios){a.href=GOOGLE;return}
+  if(!onReviews){a.href='reviews.html';a.removeAttribute('target');a.removeAttribute('rel')}
+ });
+})();
