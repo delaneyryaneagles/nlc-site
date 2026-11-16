@@ -76,7 +76,7 @@ section{padding:clamp(72px,11vw,150px) 0}
 
 /* band */
 .band{position:relative;padding:clamp(90px,15vw,180px) 0;text-align:center}
-.band::before{content:"";position:absolute;inset:0;background:url(band.jpg) center/cover;filter:saturate(.85) brightness(.5)}
+.band::before{content:"";position:absolute;inset:0;background:var(--sub,url(band.jpg)) center/cover;filter:saturate(.85) brightness(.5)}
 .band .wrap{position:relative;z-index:2}
 .band q{font-family:Fraunces;font-size:clamp(26px,4vw,52px);font-weight:400;display:block;max-width:20ch;margin:18px auto 0;line-height:1.22}
 .band q i{color:var(--gold2);font-style:italic}
@@ -139,7 +139,7 @@ footer .logo{font-size:19px}
 
 /* ---- inner pages ---- */
 .subhero{position:relative;padding:170px 0 90px;border-bottom:1px solid var(--line);overflow:hidden}
-.subhero::before{content:"";position:absolute;inset:0;background:url(band.jpg) center/cover;filter:saturate(.6) brightness(.34)}
+.subhero::before{content:"";position:absolute;inset:0;background:var(--sub,url(band.jpg)) center/cover;filter:saturate(.6) brightness(.34)}
 .subhero .wrap{position:relative;z-index:2}
 .subhero h1{font-size:clamp(38px,6vw,80px);margin-top:16px;max-width:16ch}
 .subhero p{color:#E7E2D6;max-width:54ch;margin-top:18px;font-size:17px}
