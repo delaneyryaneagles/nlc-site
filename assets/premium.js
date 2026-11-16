@@ -12,8 +12,8 @@ document.documentElement.classList.add('js');
   document.querySelectorAll('.svc article,.gal figure,.pgal figure,.trust div,.step').forEach(function(e,i){e.dataset.d=(i%6)*70});
   document.querySelectorAll('.reveal,.mask').forEach(function(e){io.observe(e)});
  }
- reveal();
- setTimeout(function(){document.querySelectorAll('.reveal,.mask').forEach(function(e){e.classList.add('in')})},2600);/*FAILSAFE*/
+ setTimeout(function(){document.querySelectorAll('.reveal,.mask').forEach(function(e){e.classList.add('in')})},2600);/*FAILSAFE: set before reveal() so a JS error there cannot leave headings hidden*/
+ try{reveal()}catch(e){document.querySelectorAll('.reveal,.mask').forEach(function(x){x.classList.add('in')})}
  // Lenis smooth scroll
  function startLenis(){
   if(!window.Lenis)return;
