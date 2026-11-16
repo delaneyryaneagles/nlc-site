@@ -8,7 +8,7 @@ html{scroll-behavior:smooth}
 body{background:var(--blk);color:var(--bone);font-family:Inter,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden}
 h1,h2,h3,.disp{font-family:Fraunces,Georgia,serif;font-weight:500;line-height:1.05;letter-spacing:-.015em}
 a{color:inherit;text-decoration:none}
-img{display:block;max-width:100%}
+img{display:block;max-width:100%;height:auto}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
 .kick{font-family:Inter;font-size:12px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
 .btn{display:inline-flex;align-items:center;gap:9px;background:var(--gold);color:#15140F;font-weight:700;font-size:15px;padding:15px 26px;border-radius:2px;transition:.25s;letter-spacing:.01em}
